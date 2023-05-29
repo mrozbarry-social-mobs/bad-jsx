@@ -1,11 +1,19 @@
 {
   "name": "bad-jsx",
-  "version": "1.0.0",
-  "description": "A repo to play around with custom jsx transform functions.",
-  "main": "index.js",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
   },
-  "author": "",
-  "license": "ISC"
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.0.0",
+    "eslint": "^8.38.0",
+    "vite": "^4.3.9"
+  }
 }
